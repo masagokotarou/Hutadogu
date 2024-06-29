@@ -41,11 +41,11 @@ public class Cannon : MonoBehaviour
     {
 
         _elapsedTime += Time.deltaTime;
-        Debug.Log($" Œo‰ßŽžŠÔ {_elapsedTime}");
+        //Debug.Log($" Œo‰ßŽžŠÔ {_elapsedTime}");
 
         if (_elapsedTime > _firingInterval)
         {
-            var obj = Instantiate(_bullet);
+            var obj = Instantiate<GameObject>(_bullet);
             if (obj.TryGetComponent<Bullet>(out var bullet))
             {
                 bullet.SetOrientation(_bulletDir);

@@ -586,7 +586,7 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
@@ -630,8 +630,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: "\u30B2\u30FC\u30E0\u30AF\u30A8\u30B9\u30C83"
-  metroPackageVersion: 
+  metroPackageName: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -639,7 +639,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: "\u30B2\u30FC\u30E0\u30AF\u30A8\u30B9\u30C83"
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: "\u30B2\u30FC\u30E0\u30AF\u30A8\u30B9\u30C83"
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

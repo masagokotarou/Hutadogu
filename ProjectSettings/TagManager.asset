@@ -7,6 +7,12 @@ TagManager:
   - BallTag
   - Ground
   - wase
+  - Goal
+  - block30
+  - tama2
+  - GameOver
+  - claer
+  - clear
   layers:
   - Default
   - TransparentFX
@@ -15,7 +21,7 @@ TagManager:
   - Water
   - UI
   - sabi
-  - 
+  - Goal
   - 
   - 
   - 

@@ -8,6 +8,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Rigidbody2D _rb2d;
+    [SerializeField] float _destroyTime = 6;
 
     Vector2 _direction = Vector2.up * 5f;
 
@@ -29,16 +30,26 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        _destroyTime -= Time.deltaTime;
+        if (_destroyTime <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
+        //if (collision.gameObject.tag == "wase")
+        //{
+        //    Destroy(gameObject);
+        //}
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
+       
     }
 }
